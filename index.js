@@ -1,11 +1,14 @@
 const express = require('express')
 const app = express()
-const { Sequelize } = require('sequelize')
+const { Sequelize, DataTypes } = require('sequelize')
+const ContactoModel = require('./models/contacto')
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
     storage: 'my-database.bd'
 });
+
+const contactos = ContactoModel(sequelize, DataTypes)
 
 app.set('view engine', 'ejs')
 

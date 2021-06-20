@@ -11,17 +11,17 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('Contacto', [{
+    await queryInterface.bulkInsert('Contactos', [{
       nombre: 'John Doe',
-      email: 'tesgmail',
+      email: 'tes@mail',
       asunto: 'Importante',
       mensaje: 'Site',
       createdAt: new Date(),
       updatedAt: new Date()
       }, {
       nombre: 'Maria Ruiz',
-      email: 'tesgmail',
-      asunto: 'Importante',
+      email: 'tes@mail',
+      asunto: 'importante',
       mensaje: 'Site',
       createdAt: new Date(),
       updatedAt: new Date()
