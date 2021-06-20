@@ -5,7 +5,7 @@ const { Sequelize } = require('sequelize')
 const sequelize = new Sequelize({
     dialect: 'sqlite',
     storage: 'my-database.bd'
-  });
+});
 
 app.set('view engine', 'ejs')
 
