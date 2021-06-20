@@ -8,9 +8,14 @@ const sequelize = new Sequelize({
     storage: 'my-database.bd'
 });
 
+// agregar dependencia cors para que acepte conexiones con el front 
+
 const contactos = ContactoModel(sequelize, DataTypes)
 
 app.set('view engine', 'ejs')
+
+// agregar las consultas o metodos post
+// 
 
 app.get('/fotos', (req, res) => {
     res.send('')
